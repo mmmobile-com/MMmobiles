@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MM Mobiles - Your Trusted Mobile Partner in Choutuppal, Nalgonda. Latest Smartphones, Genuine Accessories & Expert Repairs. 5-Star Rated.">
+    <meta name="keywords" content="Mobile Shop in Choutuppal, Nalgonda Mobile Repair, Phone Repair, Mobile Accessories, Smartphone Sales">
+    <title>MM Mobiles | Best Mobile Store in Choutuppal, Nalgonda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919705552733" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="#" class="logo" onclick="showSection('home')">
+                    <div class="logo-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="brand-name">MM Mobiles</span>
+                        <span class="location-badge">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Choutuppal, Nalgonda
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Search Bar -->
+            
+
+                <!-- Navigation -->
+                <nav class="nav-links">
+                    <a href="#home" class="nav-link active" data-section="home" onclick="showSection('home')">Home</a>
+                    <a href="#products" class="nav-link" data-section="products" onclick="showSection('products')">Products</a>
+                <!--    <a href="#accessories" class="nav-link" data-section="accessories" onclick="showSection('accessories')">Accessories</a>-->
+                    <a href="#repair" class="nav-link" data-section="repair" onclick="showSection('repair')">Repair</a>
+                    <a href="#reviews" class="nav-link" data-section="reviews" onclick="showSection('reviews')">Reviews</a>
+                    <a href="#contact" class="nav-link" data-section="contact" onclick="showSection('contact')">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-search">
+                <input type="text" id="mobileSearchInput" placeholder="Search phones..." oninput="searchProducts()">
+            </div>
+            <a href="#home" class="mobile-nav-link" onclick="showSection('home'); closeMobileMenu()">Home</a>
+            <a href="#products" class="mobile-nav-link" onclick="showSection('products'); closeMobileMenu()">Products</a>
+        <!--    <a href="#accessories" class="mobile-nav-link" onclick="showSection('accessories'); closeMobileMenu()">Accessories</a> -->
+            <a href="#repair" class="mobile-nav-link" onclick="showSection('repair'); closeMobileMenu()">Repair Services</a>
+            <a href="#reviews" class="mobile-nav-link" onclick="showSection('reviews'); closeMobileMenu()">Reviews</a>
+            <a href="#contact" class="mobile-nav-link" onclick="showSection('contact'); closeMobileMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="hero-title">Welcome to MM Mobiles</h1>
+                    <p class="hero-subtitle">Best Mobile Store in Choutuppal</p>
+                    <div class="hero-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5 Star Customer Satisfaction</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary" onclick="showSection('products')">
+                            <i class="fas fa-mobile-alt"></i>
+                            View Mobiles
+                        </a>
+                        <a href="#repair" class="btn btn-outline" onclick="showSection('repair')">
+                            <i class="fas fa-tools"></i>
+                            Repair Services
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" onclick="showSection('contact')">
+                            <i class="fas fa-phone-alt"></i>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offers Section -->
+        <div class="offers-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-gift"></i>
+                    Special Offers
+                </h2>
+                <p class="section-subtitle">Get amazing freebies with every mobile purchase!</p>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <div class="offer-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h3>Free Mobile Bag</h3>
+                        <p>Premium quality phone pouch</p>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Discount Cash Offer</h3>
+                        <p>Up to ₹2000 instant discount</p>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Free Screen Guard</h3>
+                        <p>Tempered glass protection</p>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-icon">
+                            <i class="fas fa-mobile"></i>
+                        </div>
+                        <h3>Free Back Cover</h3>
+                        <p>Original silicone case</p>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3>Festival Offers</h3>
+                        <p>Special festival discounts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="features-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-award"></i>
+                    Why Choose Us
+                </h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>100% Original Products</h3>
+                        <p>All phones come with manufacturer warranty</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Expert Repairs</h3>
+                        <p>Professional technicians for all brands</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Fast Service</h3>
+                        <p>Quick repairs within hours</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Always here to help you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-mobile-alt"></i>
+                Our Products
+            </h2>
+            <p class="section-subtitle">Latest smartphones from top brands</p>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-brand="all" onclick="filterProducts('all')">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="filter-btn" data-brand="apple" onclick="filterProducts('apple')">
+                    <i class="fab fa-apple"></i> Apple
+                </button>
+                <button class="filter-btn" data-brand="samsung" onclick="filterProducts('samsung')">
+                    <i class="fab fa-android"></i> Samsung
+                </button>
+                <button class="filter-btn" data-brand="xiaomi" onclick="filterProducts('xiaomi')">
+                    <i class="fab fa-xiaomi"></i> Xiaomi
+                </button>
+                <button class="filter-btn" data-brand="oneplus" onclick="filterProducts('oneplus')">
+                    OnePlus
+                </button>
+                <button class="filter-btn" data-brand="vivo" onclick="filterProducts('vivo')">
+                    Vivo
+                </button>
+                <button class="filter-btn" data-brand="oppo" onclick="filterProducts('oppo')">
+                    Oppo
+                </button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section id="accessories" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-headphones"></i>
+                Mobile Accessories
+            </h2>
+            <p class="section-subtitle">Quality accessories for your smartphone</p>
+
+            <!-- Filter Buttons for Accessories -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-accessory="all" onclick="filterAccessories('all')">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="filter-btn" data-accessory="charger" onclick="filterAccessories('charger')">
+                    <i class="fas fa-plug"></i> Chargers
+                </button>
+                <button class="filter-btn" data-accessory="earphone" onclick="filterAccessories('earphone')">
+                    <i class="fas fa-headphones"></i> Earphones
+                </button>
+                <button class="filter-btn" data-accessory="powerbank" onclick="filterAccessories('powerbank')">
+                    <i class="fas fa-battery-full"></i> Power Banks
+                </button>
+                <button class="filter-btn" data-accessory="case" onclick="filterAccessories('case')">
+                    <i class="fas fa-mobile"></i> Cases
+                </button>
+                <button class="filter-btn" data-accessory="guard" onclick="filterAccessories('guard')">
+                    <i class="fas fa-shield-alt"></i> Screen Guards
+                </button>
+            </div>
+
+            <!-- Accessories Grid -->
+            <div class="products-grid" id="accessoriesGrid">
+                <!-- Accessories will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Repair Services Section -->
+    <section id="repair" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-tools"></i>
+                Mobile Repair Services
+            </h2>
+            <p class="section-subtitle">Expert technicians for all mobile repairs</p>
+
+            <div class="repair-content">
+                <div class="repair-info">
+                    <div class="repair-features">
+                        <div class="repair-feature">
+                            <i class="fas fa-mobile"></i>
+                            <div>
+                                <h3>Screen Replacement</h3>
+                                <p>Original display replacement for all brands</p>
+                            </div>
+                        </div>
+                        <div class="repair-feature">
+                            <i class="fas fa-battery-full"></i>
+                            <div>
+                                <h3>Battery Replacement</h3>
+                                <p>Original battery with warranty</p>
+                            </div>
+                        </div>
+                        <div class="repair-feature">
+                            <i class="fas fa-download"></i>
+                            <div>
+                                <h3>Software Update</h3>
+                                <p>OS updates and software troubleshooting</p>
+                            </div>
+                        </div>
+                        <div class="repair-feature">
+                            <i class="fas fa-plug"></i>
+                            <div>
+                                <h3>Charging Port Repair</h3>
+                                <p>Fast charging port replacement</p>
+                            </div>
+                        </div>
+                        <div class="repair-feature">
+                            <i class="fas fa-tint"></i>
+                            <div>
+                                <h3>Water Damage Repair</h3>
+                                <p>Professional water damage treatment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair-contact">
+                    <div class="repair-card">
+                        <div class="repair-expert">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Mobile Repair Technician</h3>
+                        <p class="expert-title">Repair Expert Name</p>
+                        <p class="expert-phone">
+                            <i class="fas fa-phone-alt"></i>
+                            9705552733
+                        </p>
+                        <a href="tel:9705552733" class="btn btn-primary btn-call">
+                            <i class="fas fa-phone-alt"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-star"></i>
+                Customer Reviews
+            </h2>
+            <p class="section-subtitle">What our customers say about us</p>
+
+            <!-- Review Form -->
+            <div class="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm" onsubmit="submitReview(event)">
+                    <div class="form-row">
+                        <input type="text" id="reviewerName" placeholder="Your Name" required>
+                        <div class="rating-input">
+                            <span>Rating:</span>
+                            <div class="stars" id="ratingStars">
+                                <i class="fas fa-star" data-rating="1" onclick="setRating(1)"></i>
+                                <i class="fas fa-star" data-rating="2" onclick="setRating(2)"></i>
+                                <i class="fas fa-star" data-rating="3" onclick="setRating(3)"></i>
+                                <i class="fas fa-star" data-rating="4" onclick="setRating(4)"></i>
+                                <i class="fas fa-star" data-rating="5" onclick="setRating(5)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="file" id="reviewerPhoto" accept="image/*" class="file-input">
+                        <label for="reviewerPhoto" class="file-label">
+                            <i class="fas fa-camera"></i> Upload Your Photo
+                        </label>
+                    </div>
+                    <textarea id="reviewText" placeholder="Write your review..." rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Submit Review
+                    </button>
+                </form>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Reviews will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-address-card"></i>
+                Contact Us
+            </h2>
+            <p class="section-subtitle">Visit our store or reach out to us</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>MM Mobiles</p>
+                        <p>Choutuppal, Nalgonda</p>
+                        <p>Telangana, India</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:970-555-2733">9705552733</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/919705552733" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Opening Hours</h3>
+                        <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                        <p>Sunday: 10:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800!2d!3d!3d17.2!2d79.5!3d17.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDEyJzAwLjAiTiA3OcKwMzAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        <div class="map-overlay">
+                            <a href="https://maps.google.com/?q=Choutuppal,Nalgonda" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Open in Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MM Mobiles</h3>
+                    <p>Your trusted mobile shop in Choutuppal, Nalgonda. Providing latest smartphones, genuine accessories, and expert repair services since 2018.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                        <li><a href="#products" onclick="showSection('products')">Products</a></li>
+                        <li><a href="#repair" onclick="showSection('repair')">Repair Services</a></li>
+                        <!--<li><a href="#accessories" onclick="showSection('accessories')">Accessories</a></li>-->
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#products" onclick="showSection('products')">Mobile Sales</a></li>
+                        <li><a href="#repair" onclick="showSection('repair')">Screen Repair</a></li>
+                        <li><a href="#repair" onclick="showSection('repair')">Battery Replacement</a></li>
+                        <!--<li><a href="#accessories" onclick="showSection('accessories')">Accessories</a></li>-->
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#contact" onclick="showSection('contact')">Address</a></li>
+                        <li><a href="tel:970-555-2733">9705552733</a></li>
+                        <li><a href="https://wa.me/919705552733" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MM Mobiles. All rights reserved. | Best Mobile Store in Choutuppal, Nalgonda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content cart-modal-content">
+            <button class="modal-close" onclick="closeCartModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="cart-modal-body">
+                <h2><i class="fas fa-shopping-cart"></i> Shopping Cart</h2>
+                <div id="cartItems">
+                    <!-- Cart items will be inserted here -->
+                </div>
+                <div class="cart-total">
+                    <h3>Total: <span id="cartTotal">₹0</span></h3>
+                </div>
+                <button class="btn btn-primary" onclick="checkout()">
+                    <i class="fas fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
