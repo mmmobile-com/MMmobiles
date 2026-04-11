@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MM Mobiles - Your Trusted Mobile Partner in Choutuppal, Nalgonda. Latest Smartphones, Genuine Accessories & Expert Repairs. 5-Star Rated.">
-    <meta name="keywords" content="Mobile Shop in Choutuppal, Nalgonda Mobile Repair, Phone Repair, Mobile Accessories, Smartphone Sales">
-    <title>MM Mobiles | Best Mobile Store in Choutuppal, Nalgonda</title>
+    <meta name="description" content="MM Mobiles - Your Trusted Mobile Partner in Choutuppal, Yadhardhi Bhuvanagiri. Latest Smartphones, Genuine Accessories & Expert Repairs. 5-Star Rated.">
+    <meta name="keywords" content="Mobile Shop in Choutuppal,  Yadhardhi Bhuvanagiri Mobile Repair, Phone Repair, Mobile Accessories, Smartphone Sales">
+    <title>MM Mobiles | Best Mobile Store in Choutuppal, Yadhardhi Bhuvanagiri</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Floating WhatsApp Button -->
     <div class="whatsapp-float">
@@ -25,25 +27,25 @@
                 <!-- Logo -->
                 <a href="#" class="logo" onclick="showSection('home')">
                     <div class="logo-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <img src="https://res.cloudinary.com/dptxuxhbm/image/upload/v1772893463/563339699_17910395886238023_7073893589093088190_n_scnrgd.jpg" />
                     </div>
                     <div class="logo-text">
                         <span class="brand-name">MM Mobiles</span>
                         <span class="location-badge">
                             <i class="fas fa-map-marker-alt"></i>
-                            Choutuppal, Nalgonda
+                            Choutuppal,Yadhardhi Bhuvanagiri
                         </span>
                     </div>
                 </a>
 
                 <!-- Search Bar -->
-            
+
 
                 <!-- Navigation -->
                 <nav class="nav-links">
                     <a href="#home" class="nav-link active" data-section="home" onclick="showSection('home')">Home</a>
                     <a href="#products" class="nav-link" data-section="products" onclick="showSection('products')">Products</a>
-                <!--    <a href="#accessories" class="nav-link" data-section="accessories" onclick="showSection('accessories')">Accessories</a>-->
+                    <a href="#accessories" class="nav-link" data-section="accessories" onclick="showSection('accessories')">Accessories</a>
                     <a href="#repair" class="nav-link" data-section="repair" onclick="showSection('repair')">Repair</a>
                     <a href="#reviews" class="nav-link" data-section="reviews" onclick="showSection('reviews')">Reviews</a>
                     <a href="#contact" class="nav-link" data-section="contact" onclick="showSection('contact')">Contact</a>
@@ -59,11 +61,11 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu" id="mobileMenu">
             <div class="mobile-search">
-                <input type="text" id="mobileSearchInput" placeholder="Search phones..." oninput="searchProducts()">
+                <!--<input type="text" id="mobileSearchInput" placeholder="Search phones..." oninput="searchProducts()">-->
             </div>
             <a href="#home" class="mobile-nav-link" onclick="showSection('home'); closeMobileMenu()">Home</a>
             <a href="#products" class="mobile-nav-link" onclick="showSection('products'); closeMobileMenu()">Products</a>
-        <!--    <a href="#accessories" class="mobile-nav-link" onclick="showSection('accessories'); closeMobileMenu()">Accessories</a> -->
+            <a href="#accessories" class="mobile-nav-link" onclick="showSection('accessories'); closeMobileMenu()">Accessories</a>
             <a href="#repair" class="mobile-nav-link" onclick="showSection('repair'); closeMobileMenu()">Repair Services</a>
             <a href="#reviews" class="mobile-nav-link" onclick="showSection('reviews'); closeMobileMenu()">Reviews</a>
             <a href="#contact" class="mobile-nav-link" onclick="showSection('contact'); closeMobileMenu()">Contact</a>
@@ -74,7 +76,15 @@
     <section id="home" class="section active">
         <!-- Hero Section -->
         <div class="hero">
-            <div class="hero-overlay"></div>
+
+            <div class="mobile">
+                <div class="mobile-screen">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://res.cloudinary.com/dptxuxhbm/video/upload/v1775737041/Firefly_A_modern_mobile_store_interior_with_bright_lighting_stylish_glass_displays_and_neatly_arra_xtagmh.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </div>
             <div class="hero-content">
                 <div class="container">
                     <h1 class="hero-title">Welcome to MM Mobiles</h1>
@@ -104,6 +114,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- Special Offers Section -->
         <div class="offers-section">
@@ -206,17 +217,20 @@
                 <button class="filter-btn" data-brand="samsung" onclick="filterProducts('samsung')">
                     <i class="fab fa-android"></i> Samsung
                 </button>
+                <button class="filter-btn" data-brand="vivo" onclick="filterProducts('vivo')">
+                    Vivo
+                </button>
                 <button class="filter-btn" data-brand="xiaomi" onclick="filterProducts('xiaomi')">
                     <i class="fab fa-xiaomi"></i> Xiaomi
                 </button>
                 <button class="filter-btn" data-brand="oneplus" onclick="filterProducts('oneplus')">
                     OnePlus
                 </button>
-                <button class="filter-btn" data-brand="vivo" onclick="filterProducts('vivo')">
-                    Vivo
-                </button>
                 <button class="filter-btn" data-brand="oppo" onclick="filterProducts('oppo')">
                     Oppo
+                </button>
+                <button class="filter-btn" data-brand="iqoo" onclick="filterProducts('iqoo')">
+                    iQoo
                 </button>
             </div>
 
@@ -397,7 +411,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>Address</h3>
                         <p>MM Mobiles</p>
-                        <p>Choutuppal, Nalgonda</p>
+                        <p>Choutuppal, Yadhardhi Bhuvanagiri</p>
                         <p>Telangana, India</p>
                     </div>
                     <div class="contact-card">
@@ -419,16 +433,10 @@
                 </div>
                 <div class="contact-map">
                     <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800!2d!3d!3d17.2!2d79.5!3d17.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDEyJzAwLjAiTiA3OcKwMzAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
+                        <iframe src="https://media.istockphoto.com/id/531265203/photo/gps-navigation-concept.jpg?s=612x612&w=0&k=20&c=skwq0zqv7kMlA9GfKAQAmNBdVMqzecjmc1hGRQxBWH0=" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
                         <div class="map-overlay">
-                            <a href="https://maps.google.com/?q=Choutuppal,Nalgonda" target="_blank" class="btn btn-primary">
+                            <a href="https://maps.app.goo.gl/UssCxoAVyqyyXT8o6" target="_blank" class="btn btn-primary">
                                 <i class="fas fa-external-link-alt"></i>
                                 Open in Maps
                             </a>
@@ -445,10 +453,10 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>MM Mobiles</h3>
-                    <p>Your trusted mobile shop in Choutuppal, Nalgonda. Providing latest smartphones, genuine accessories, and expert repair services since 2018.</p>
+                    <p>Your trusted mobile shop in Choutuppal, Yadhardhi Bhuvanagiri. Providing latest smartphones, genuine accessories, and expert repair services since 2018.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/MM-Mobiles-choutuppal/61581801841129/#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mm_mobiles589/"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
@@ -481,7 +489,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 MM Mobiles. All rights reserved. | Best Mobile Store in Choutuppal, Nalgonda</p>
+                <p>&copy; 2026 MM Mobiles. All rights reserved. | Best Mobile Store in Choutuppal, Yadhardhi Bhuvanagiri.</p>
             </div>
         </div>
     </footer>
@@ -521,6 +529,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
-
-
